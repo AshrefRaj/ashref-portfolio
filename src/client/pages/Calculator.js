@@ -51,15 +51,6 @@ const Calculator = ({ greeting = 'CALCULATOR' }) => {
   return (
     <section className="calculatorContainer">
       <h1>{greeting}</h1>
-      <link
-        href="https://fonts.googleapis.com/css?family=Orbitron"
-        rel="stylesheet"
-        type="text/css"
-      ></link>
-      <link
-        href="http://fonts.cdnfonts.com/css/scientific-calculator-lcd"
-        rel="stylesheet"
-      ></link>
       <div className="container">
         <div className="calculator">
           <div className="display">
