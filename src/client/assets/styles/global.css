@@ -6,8 +6,11 @@
 :root {
   --bgColor: #e0e0e0;
   --fontColor: #000033;
+  --yellow-color: #ddb561;
+  --brown-color: #361600;
 }
 body {
   background-color: var(--bgColor);
   color: var(--fontColor);
+  scroll-behavior: smooth;
 }
