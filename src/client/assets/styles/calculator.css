@@ -18,7 +18,7 @@
 }
 .calculatorContainer {
   background-color: #e0e0e0;
-  min-height: 100vh;
+  min-height: 99vh;
   width: 100%;
   display: flex;
   align-items: center;
