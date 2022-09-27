@@ -40,7 +40,12 @@ const Calculator = ({ greeting = 'CALCULATOR' }) => {
       }
       default: {
         if (question === '' && answer !== '') {
-          setQuestion(answer + val + question)
+          if (isNaN(val)) {
+            setQuestion(answer + val + question)
+          } else {
+            setQuestion(val)
+            setAnswer('')
+          }
         } else {
           setQuestion(question + val)
         }
