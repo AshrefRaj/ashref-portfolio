@@ -1,0 +1,25 @@
+import $ from 'jquery'
+
+$('.mt-content-container').css('min-height', $(window).height())
+
+// Make sure to close collapsed nav menu after click of menu itemnpm
+$(document).on('click', '.navbar-collapse.in', function (event) {
+	if ($(event.target).is('a')) {
+		$(this).collapse('hide')
+	}
+})
+
+// Toggle Fade in/out top-nav link on scroll from/to home container
+$(window).scroll(function () {
+	if ($(this).scrollTop() > 100) {
+		$('.mt-scroll-up-link').fadeIn()
+	} else {
+		$('.mt-scroll-up-link').fadeOut()
+	}
+})
+
+$('.mt-copyright-row').css('height', $(window).height() - 620)
+
+$('#send-message').click(function (event) {
+	event.preventDefault()
+})
